@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #80caec, #910dc5);
+}
+*{  
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#oled{
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px 30px;
+    margin-right: 10%;
+    max-height: 600px;
+}
+#marks{
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px 30px;
+    margin-left: 6%;
+    max-height: 600px;
+}
+#num,#nums{
+    max-width: 400px;
+    width: 100%;
+    height: 25px;
+    padding: 1px;
+    border: 1px solid black;
+    font-weight: 900;
+    margin: 1px;
+}
+#result{
+    margin: 7px;
+}
+#calculate{
+    margin-top: 15px;
+    max-width: 400px;
+    width: 100%;
+    border: 0px;
+    height: 30px;
+    color: #fff;
+    font-weight: 900;
+    background: linear-gradient(135deg, #80caec, #910dc5) ;
+
+}
+#maths,#sci,#sst,#eng,#hindi,#pbi{
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid black;
+    height: 25px;
+    font-weight: 900;
+}
+#resultss{
+    max-width: 400px;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-weight: 900;
+    border: 0px;
+    background:linear-gradient(135deg, #80caec, #910dc5) ;
+}
+#num:hover{
+    background-color: rgb(223, 247, 255);
+}#nums:hover{
+    background-color: rgb(223, 247, 255);
+}#maths:hover{
+    background-color: rgb(223, 247, 255);
+}#sci:hover{
+    background-color: rgb(223, 247, 255);
+}#sst:hover{
+    background-color: rgb(223, 247, 255);
+}#eng:hover{
+    background-color: rgb(223, 247, 255);
+}#hindi:hover{
+    background-color: rgb(223, 247, 255);
+}#pbi:hover{
+    background-color: rgb(223, 247, 255);
+}
+#best{
+    margin: 10px;
+
+}

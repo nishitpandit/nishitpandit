@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="csscsscss.css">
+</head>
+
+<body>
+    <!-- javascript start! -->
+    <script>
+        function functionmy() {
+            var x = parseInt(document.getElementById('maths').value);
+            var y = parseInt(document.getElementById('sci').value);
+            var z = parseInt(document.getElementById('sst').value);
+            var a = parseInt(document.getElementById('eng').value);
+            var r = parseInt(document.getElementById('hindi').value);
+            var s = parseInt(document.getElementById('pbi').value);
+
+
+            var res = x + y + z + a + r + s;
+            document.getElementById('demo').innerHTML = "Total:" + res;
+
+            var per = (res * 100) / 600;
+            document.getElementById('demo2').innerHTML = "Percentage: " + per;
+
+            let grade;
+            if (per >= 90) {
+                grade = 'A+';
+            }
+            else if (per >= 75) {
+                grade = 'A';
+            }
+            else if (per >= 60) {
+                grade = 'B';
+            }
+            else if (per >= 35) {
+                grade = 'F';
+            }
+            document.getElementById('demo3').innerHTML = 'Grade: ' + grade;
+        }
+
+    
+    </script>
+   <script>
+       function plus(){
+        let w=parseInt(document.getElementById('num').value);
+        let o=parseInt(document.getElementById('nums').value);
+        let x= w+o;
+        document.getElementById('hyuga').innerHTML = x;
+       }
+       function minus(){
+        let w=parseInt(document.getElementById('num').value);
+        let o=parseInt(document.getElementById('nums').value);
+        let x= w-o;
+        document.getElementById('hyuga').innerHTML = x;
+       }
+       function multiply(){
+        let w=parseInt(document.getElementById('num').value);
+        let o=parseInt(document.getElementById('nums').value);
+        let x= w*o;
+        document.getElementById('hyuga').innerHTML = x;
+       }
+       function divide(){
+        let w=parseInt(document.getElementById('num').value);
+        let o=parseInt(document.getElementById('nums').value);
+        let x= w/o;
+        document.getElementById('hyuga').innerHTML = x;
+       }
+       function expo(){
+        let w=parseInt(document.getElementById('num').value);
+        let o=parseInt(document.getElementById('nums').value);
+        let x= w**o;
+        document.getElementById('hyuga').innerHTML = x;
+       }
+       function modulus(){
+        let w=parseInt(document.getElementById('num').value);
+        let o=parseInt(document.getElementById('nums').value);
+        let x= w%o;
+        document.getElementById('hyuga').innerHTML = x;
+       }
+       function mainclall(){
+        if (x==w+o){
+            x= w+o;
+        }
+       }
+   </script>
+    <!-- javascript end! -->
+        <form ID="oled" name="oled">
+            <h1>SIMPLE CALCULATOR</h1>  
+            <h4>1<sup>st</sup> VALUE</h4>
+            <input type="number" id="num" name="num">
+            <h4>2<sup>nd</sup> VALUE</h4>   
+            <input type="number" id="nums" name="nums">
+            <br>
+            <input type="button" value="plus" name="best" id="best" onclick="maincall()">
+            <input type="button" value="minus" name="best1" id="best1" onclick="minus()">
+            <input type="button" value="multiply" name="best2" id="best2" onclick="multiply()">
+            <input type="button" value="divide" name="best3" id="best3" onclick="divide()">
+            <input type="button" value="exponential" name="best4" id="best4" onclick="expo()">
+            <input type="button" value="modulus" name="best5" id="best5" onclick="modulus()">
+            <h4 ID="hyuga"></h4>
+        </form>
+    <!-- student marks calculator start -->
+    <form id="marks">
+        <h1>MARKS CALCULATOR</h1>
+        <h4>MATHS</h4>
+        <input type="number" id="maths"><br>
+        <h4>SCIENCE</h4>
+        <input type="number" id="sci"><br>
+        <H4>SOCIAL SCIENCE</H4>
+        <input type="number" id="sst"><br>
+        <H4>ENGLISH</H4>
+        <input type="number" id="eng"><br>
+        <H4>HINDI</H4>
+        <input type="number" id="hindi"><br>
+        <H4>PUNJABI</H4>
+        <input type="number" id="pbi"><br><br>
+
+        <input type="button" value="Calculate" id="resultss" onclick="functionmy()">
+        <h4 id="demo"></h4>
+        <h4 id="demo2"></h4>
+        <h4 id="demo3"></h4>
+    </form>
+
+
+    <!-- student marks calculator end -->
+
+
+
+</body>
+
+</html>
